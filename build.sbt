@@ -2,12 +2,12 @@ organization := "com.nkouevda"
 name := "hash-service"
 version := "0.0.1-SNAPSHOT"
 
-scalaVersion := "2.12.8"
+scalaVersion := "2.13.18"
 
-val logbackVersion = "1.2.3"
-val comTwitterFinatraVersion = "20.12.0"
+val logbackVersion = "1.6.8"
+val comTwitterFinatraVersion = "24.2.0"
 
 libraryDependencies ++= Seq(
   "ch.qos.logback" % "logback-classic" % logbackVersion,
-  "com.twitter" %% "finatra-http" % comTwitterFinatraVersion,
+  "com.twitter" %% "finatra-http-server" % comTwitterFinatraVersion,
 )
